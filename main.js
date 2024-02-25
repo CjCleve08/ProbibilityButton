@@ -9,7 +9,7 @@ let highScoreText = document.getElementById("high-score-text");
 let score = 0;
 let resetProbibility = 0;
 let probabilityResetProbibility = 0;
-let highScore = localStorage.getItem("highScore");
+let highScore = localStorage.getItem("highScore") || 0;
 
 highScoreText.innerHTML = "High Score: " + highScore.toString();
 
