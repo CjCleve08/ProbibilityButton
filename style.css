@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #EEEEEE;
+    overflow: hidden;
+}
+
+#probibility-reset-probibility-text, #reset-probibility-text {
+    font-size: 2vh;
+}
+
+#score-text-holder {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#score-text {
+    margin-top: 5vh;
+    position: absolute;
+    font-size: 15vh;
+}
+
+#probibility-holder {
+    position: absolute;
+}
+
+#high-score-holder {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 85vh;
+}
+
+#high-score-text {
+    position: absolute;
+    font-size: 5vh;
+}
+
+#button-holder{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#gray-circle{
+    position: absolute;
+    background-color: darkgray;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    height: 30vh;
+}
+#darkred-circle {
+    position: absolute;
+    margin-bottom: 0.1vh;
+    background-color: darkred;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    height: 28vh;
+}
+#red-circle {
+    position: absolute;
+    margin-bottom: 4vh;
+    background-color: red;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    height: 28vh;
+}
+
+.button-down {
+    animation: button-down 100ms ease forwards;
+}
+.button-up {
+    animation: button-up 100ms ease forwards;
+}
+
+@keyframes button-down {
+    from {margin-bottom: 4vh;}
+    to {margin-bottom: 0.1vh;}
+}
+
+@keyframes button-up {
+    from {margin-bottom: 0.1vh;}
+    to {margin-bottom: 4vh;}
+}
